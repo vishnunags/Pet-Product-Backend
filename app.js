@@ -14,7 +14,7 @@ app.use(cors());
 // Routes
 app.use('/api', productRoutes);
 app.use('/api/order', orderRoutes);
-const PORT = 3000;
+const PORT = 80;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
