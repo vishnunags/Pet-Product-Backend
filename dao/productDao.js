@@ -12,7 +12,7 @@ const pool = mysql.createPool({
 
 async function getAllProducts() {
     const [rows] = await pool.query('SELECT * FROM products');
-    return "vishnu";
+    return rows;
 }
 
 async function getProductById(id) {
